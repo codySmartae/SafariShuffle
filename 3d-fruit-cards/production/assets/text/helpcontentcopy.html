@@ -1,0 +1,46 @@
+<h1>Scoreboard</h1>
+<div id="scoreboard">
+    <!-- Data will be rendered here -->
+</div>
+<script>
+    // Make the AJAX request and render data in the HTML
+    $(document).ready(function () {
+        debugger
+        // Make the AJAX request to fetch the top three scores
+        $.ajax({
+            url: "https://safarishuffleapi.codysmart.ae/api/ScoreboardApi/GetTopThreeScores",
+            type: "GET",
+            success: function (response) {
+                // Check if the response is an array with data
+                if (Array.isArray(response) && response.length > 0) {
+                    const scoreboardDiv = $("#scoreboard");
+                    let htmlContent = "<ul>";
+
+                    // Iterate through the array and create list items
+                    response.forEach(player => {
+                        htmlContent += `
+                                <li>
+                                    <strong>Name:</strong> ${player.name} <br>
+                                    <strong>Score:</strong> ${player.score}
+                                </li>
+                            `;
+                    });
+
+                    htmlContent += "</ul>";
+
+                    // Add the data to the scoreboard div
+                    scoreboardDiv.html(htmlContent);
+                } else {
+                    // No data found, show a friendly message
+                    $("#scoreboard").html("<p>No scores available at the moment.</p>");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error occurred:", error);
+
+                // Render an error message in the HTML
+                $("#scoreboard").html(`<p style="color: red;">Failed to load data. Please try again.</p>`);
+            }
+        });
+    });
+</script>

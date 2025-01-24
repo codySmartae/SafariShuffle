@@ -1,0 +1,135 @@
+
+Customization
+=============
+
+You can customize the game by editing *config.json* (production/ test folder) or insert javascript code into intializing code in *index.html*
+
+config.json
+-----------
+
+* General parameters
+
+.. list-table:: 
+   :widths: 30 25 25 50
+   :header-rows: 1
+
+   * - Name
+     - Type
+     - Default
+     - Description
+   * - useHelpPanel
+     - boolean
+     - true
+     - Enable or disable help panel
+   * - useCreditPanel
+     - boolean
+     - true
+     - Enable or disable credit panel
+   * - useBackgroundMusic
+     - boolean
+     - true
+     - Enable or disable background music
+   * - cardTextures
+     - array
+     - ["pad1.jpg", ...]
+     - List of textures used as card textures
+
+
+* String resources for changing text interfaces: 
+    APP_TITLE, APP_INFO, NEW_GAME, HELP, HELP_TEXT, SETTING, CREDIT, CREDIT_TEXT
+
+
+* Input image customization
+
+  The "data" object contains keys and values which correspond to each image category and its number of items.
+
+.. image:: data.jpg
+   :width: 500
+
+For example, to add a new category "fruits" you can create a folder "fruits" and put all the images naming from 1.jpg, 2.jpg, 3.jpg... inside that folder.
+Then declare "data" like so with 20 is the total number of items
+
+.. code-block:: javascript
+ :linenos:
+
+  "data":{
+    "fruits":20
+  }
+
+
+* Level customization
+
+  The "level" object is used to add new game level. In this example "category" is the category id declared in "data" and "grid"
+  is the matrix configuration for that level.
+
+.. code-block:: javascript
+ :linenos:
+
+  "level":[
+    {"category":0, "grid":"2x3"},
+    {"category":1, "grid":"2x3"},
+    {"category":2, "grid":"3x4"},
+    {"category":3, "grid":"4x4"}
+  ],
+
+Javascript
+----------
+
+You can also pass an argument object to the game instance to config its behaviour. Inside "index.html" (production folder) :
+
+.. code-block:: javascript
+ :linenos:
+
+  var el = document.querySelector('.rs-fc3d');
+  var fc3d = new FruitCard(el, {
+    containerZ:-1400,
+    cardWidth:300,
+    cardHeight:400,
+    cardDistance:50,
+    borderScale:1.12,
+    fitFactor:0.85,
+    ambientLight:0x333333,
+    lightMovingSpeed:4
+  });
+
+.. list-table:: 
+   :widths: 30 25 25 50
+   :header-rows: 1
+
+   * - Name
+     - Type
+     - Default
+     - Description
+   * - containerZ
+     - Number
+     - -1400
+     - Container Z position
+   * - cardWidth
+     - Number
+     - 300
+     - Card item width
+   * - cardHeight
+     - Number
+     - 400
+     - Card item height
+   * - cardDistance
+     - Number
+     - 50
+     - Distance between items
+   * - borderScale
+     - Number
+     - 1.12
+     - White border scaleing
+   * - fitFactor
+     - Number
+     - 0.96
+     - Fit factor applied to each photo
+   * - ambientLight
+     - Number
+     - 0x333333
+     - Ambient color of the scene
+   * - lightMovingSpeed
+     - Number
+     - 2
+     - Light moving speed
+

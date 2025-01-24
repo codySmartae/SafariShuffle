@@ -1,0 +1,20 @@
+
+//$accentColor:#e6e229;
+$accentColor: #111111;
+$secondColor: #ffcc00;
+$thirdColor: #f3d2c5;
+
+@import "ui/ringpreloader";
+@import "game/panel";
+@import "fc3d/trophypanel";
+@import "fc3d/helppanel";
+@import "fc3d/creditpanel";
+@import "fc3d/gamefont";
+@import "fc3d/gameicon";
+@import "fc3d/game";
+@import "fc3d/responsive";
+@import "fc3d/hscreenheader";
+@import "fc3d/hscreenmenu";
+@import "fc3d/fsbtn";
+@import "fc3d/gamebutton";
+@import "fc3d/gameheader";

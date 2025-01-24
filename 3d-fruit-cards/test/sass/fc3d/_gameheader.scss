@@ -1,0 +1,99 @@
+
+.rs-fc3d-gameheader {
+
+  font-family: sans-serif;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 10, 10, 0.8);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 40px;
+
+  .rs-fc3d-timebtn {
+    color: #fff;
+    font-size: 20px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 6px;
+    }
+
+    .icon-timer {
+      background: #333;
+    }
+
+    .icon-pausetime {
+      font-size: 12px;
+    }
+
+    .icon-playtime {
+      font-size: 12px;
+    }
+
+    .timebtn-value {
+      font-size: 14px;
+      background: #ffcc00;
+      font-family: 'Atma', serif;
+      color: #111;
+      border-radius: 4px;
+    }
+  }
+
+  .rs-fc3d-levelbtn {
+    background: #009245;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px 4px;
+
+    span {
+      user-select: none;
+      display: inline-block;
+      padding: 2px;
+    }
+
+    .levelbtn-label {
+      font-size: 20px;
+      font-family: 'Atma', serif;
+      padding: 8px;
+    }
+
+    .levelbtn-shuffle {
+    }
+  }
+
+  .rs-fc3d-movebtn {
+    color: #fff;
+    font-size: 20px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 6px;
+    }
+
+    .icon-magic {
+      background: #333;
+      font-size: 16px;
+    }
+
+    .icon-eye {
+      font-size: 12px;
+    }
+
+    .movebtn-value {
+      font-size: 14px;
+      font-family: 'Atma', serif;
+      background: #ffcc00;
+      color: #111;
+      border-radius: 4px;
+    }
+  }
+}

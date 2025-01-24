@@ -1,0 +1,20 @@
+include utils
+doctype html
+html
+  include header-production
+
+  block body
+    = '\n'
+    body
+      // Main 
+      #wrapper
+        // Start gallery
+        .rs-container
+          .rs-fc3d
+            = '\n'
+            block content
+        // end gallery
+      // end main wrapper
+      include footer-production
+      block extra
+      block endscript

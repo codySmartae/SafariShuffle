@@ -1,0 +1,62 @@
+$progressBarFrontColor: #3fe8e0;
+$progressBarBgColor: #555;
+
+.rs-hscreen-header {
+
+  position: relative;
+
+  .app-logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: block;
+    animation: 1s infinite alternate logo-animation;
+    user-select: none;
+  }
+
+  .app-title {
+    font-family: 'Atma', serif;
+    text-align: center;
+    font-weight: 700;
+    color: $accentColor;
+    letter-spacing: 6px;
+    position: relative;
+    user-select: none;
+  }
+
+  .app-info {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    display: block;
+    text-align: center;
+    user-select: none;
+    font-size: 20px;
+  }
+
+  .app-progress {
+    height: 10px;
+    margin: 0 auto;
+    margin-top: 24px;
+    display: block;
+    background: $progressBarBgColor;
+    border-radius: 10px;
+  }
+
+  .app-progress-inner {
+    background: #ffcc00;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.35s ease-out;
+  }
+}
+
+@keyframes logo-animation {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.2, 1.2);
+  }
+}

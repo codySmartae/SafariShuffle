@@ -1,0 +1,58 @@
+{
+  "general": {
+    "useName": true,
+    "useAge": true,
+    "useFullscreen": true,
+    "useHelpPanel": false,
+    "useCreditPanel": false,
+    "useBackgroundMusic": true,
+    "useScoreboardpanel":true,
+    "cardTextures": [
+      "back0.png",
+      "back0.png",
+      "back0.png"
+    ]
+  },
+  "strings": {
+    "APP_TITLE": "",
+    "APP_INFO": "",
+    "NAME": "Name",
+    "AGE": "Age",
+    "SCOREBOARD":"Score board",
+    "NEW_GAME": "NEW GAME",
+    "HELP": "HELP",
+    "HELP_TEXT": "Help text",
+    "SETTING": "SETTING",
+    "CREDIT": "CREDIT",
+    "CREDIT_TEXT": "Music and sound effects from opengameart.org"
+  },
+  "level": [
+    {
+      "category": 0,
+      "grid": "2x3"
+    },
+    {
+      "category": 0,
+      "grid": "2x3"
+    },
+    {
+      "category": 0,
+      "grid": "2x4"
+    },
+    {
+      "category": 0,
+      "grid": "2x4"
+    },
+    {
+      "category": 0,
+      "grid": "3x4"
+    },
+    {
+      "category": 0,
+      "grid": "3x4"
+    }
+  ],
+  "data": {
+    "fruits": 6
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="3d, photo, gallery, advanced, javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/fc3d.prod.min.css">
+    
+    <title>Safari Shuffle</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <!-- <script src="js/fc3d.min.js"></script> -->
+    <script src="js/fc3d.js"></script>
+  </head>
+
+  <body>
+    <!-- Main -->
+    <div id="wrapper">
+      <!-- Start gallery-->
+      <div class="rs-container">
+        <div class="rs-fc3d">
+
+        </div>
+      </div>
+      <!-- end gallery-->
+    </div>
+    <!-- end main wrapper-->
+    <footer>Designed and developed by <a href="https://raizensoft.com" target="_blank">Raizensoft.com</a></footer>
+    <script type="text/javascript">
+      document.body.onload = function() {
+      
+        "use strict";
+      
+        var el = document.querySelector('.rs-fc3d');
+        var fc3d = new FruitCard(el,
+          {
+            cardWidth:400,
+            cardHeight:400,
+            borderScale:0.1
+          }
+        );
+        window.fc3d = fc3d;
+      }
+    </script>
+  </body>
+</html>

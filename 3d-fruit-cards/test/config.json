@@ -1,0 +1,108 @@
+{
+  "general": {
+    "useFullscreen": true,
+    "useHelpPanel": true,
+    "useCreditPanel": true,
+    "useBackgroundMusic": true,
+    "cardTextures": [
+      "back0.jpg",
+      "back1.jpg",
+      "back2.jpg"
+    ]
+  },
+  "strings": {
+    "APP_TITLE": "3D Fruit Cards",
+    "APP_INFO": "Educational Memory Game",
+    "NEW_GAME": "NEW GAME",
+    "HELP": "HELP",
+    "HELP_TEXT": "Help text",
+    "SETTING": "SETTING",
+    "CREDIT": "CREDIT",
+    "CREDIT_TEXT": "Music and sound effects from opengameart.org"
+  },
+  "level": [
+    {
+      "category": 0,
+      "grid": "2x3"
+    },
+    {
+      "category": 0,
+      "grid": "2x3"
+    },
+    {
+      "category": 0,
+      "grid": "2x4"
+    },
+    {
+      "category": 0,
+      "grid": "2x4"
+    },
+    {
+      "category": 0,
+      "grid": "3x4"
+    },
+    {
+      "category": 0,
+      "grid": "3x4"
+    },
+    {
+      "category": 0,
+      "grid": "4x4"
+    },
+    {
+      "category": 0,
+      "grid": "4x4"
+    },
+    {
+      "category": 0,
+      "grid": "4x5"
+    },
+    {
+      "category": 0,
+      "grid": "4x5"
+    },
+    {
+      "category": 0,
+      "grid": "4x6"
+    },
+    {
+      "category": 0,
+      "grid": "4x6"
+    },
+    {
+      "category": 0,
+      "grid": "5x6"
+    },
+    {
+      "category": 0,
+      "grid": "5x6"
+    },
+    {
+      "category": 0,
+      "grid": "6x6"
+    },
+    {
+      "category": 0,
+      "grid": "6x6"
+    },
+    {
+      "category": 0,
+      "grid": "6x7"
+    },
+    {
+      "category": 0,
+      "grid": "6x7"
+    },
+    {
+      "category": 0,
+      "grid": "6x7"
+    },
+    {
+      "category": 0,
+      "grid": "6x7"
+    }
+  ],
+  "data": {
+    "fruits": 15
+  }
+}
